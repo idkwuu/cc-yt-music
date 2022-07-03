@@ -12,4 +12,4 @@ def check_ffmpeg():
 def convert_to_dfpwm(ytid):
     m4a_filename = ytid + '.m4a'
     dfpwm_filename = ytid + '.dfpwm'
-    subprocess.run(['ffmpeg', '-i', m4a_filename, '-ac', '1', dfpwm_filename, '-y'])
+    subprocess.run(['ffmpeg', '-i', m4a_filename, '-ac', '1', '-ar', '48000', dfpwm_filename, -y'])
